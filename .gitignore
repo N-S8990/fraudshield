@@ -7,9 +7,6 @@ __pycache__/
 mlflow.db
 mlruns/
 
-# Screenshots
-screenshots/
-
 # Virtual envs
 venv/
 .venv/
