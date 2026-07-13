@@ -1,0 +1,271 @@
+/* ── FraudShield Dashboard ── */
+:root {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface2: #334155;
+  --accent: #38bdf8;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --border: #475569;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.tagline {
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+nav button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 8px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+nav button.active {
+  background: var(--accent);
+  color: #0f172a;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+nav button:hover:not(.active) {
+  background: var(--surface2);
+  color: var(--text);
+}
+
+main { flex: 1; }
+
+footer {
+  text-align: center;
+  padding: 24px 0 8px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+
+/* ── Dashboard ── */
+.dashboard h2, .live-predict h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.loading {
+  text-align: center;
+  padding: 48px;
+  color: var(--text-muted);
+}
+
+.model-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.model-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.model-card h3 {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  color: var(--accent);
+}
+
+.model-card table { width: 100%; border-collapse: collapse; }
+
+.model-card td {
+  padding: 6px 0;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.model-card td:first-child { color: var(--text-muted); }
+.model-card td:last-child { text-align: right; font-weight: 600; }
+
+.insight-box {
+  margin-top: 24px;
+  background: var(--surface);
+  border-left: 4px solid var(--accent);
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.insight-box strong { color: var(--text); }
+
+/* ── Live Predict ── */
+.predict-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+legend {
+  grid-column: 1 / -1;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+details {
+  margin-bottom: 16px;
+}
+
+summary {
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding: 8px 0;
+}
+
+summary:hover { color: var(--text); }
+
+.v-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+button[type="submit"] {
+  background: var(--accent);
+  color: #0f172a;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.result-card {
+  margin-top: 24px;
+  padding: 20px 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.result-card.legit {
+  background: #052e16;
+  border: 1px solid var(--success);
+}
+
+.result-card.fraud {
+  background: #2e0505;
+  border: 1px solid var(--danger);
+}
+
+.result-card h3 { margin-bottom: 8px; font-size: 1.2rem; }
+.result-card.legit h3 { color: var(--success); }
+.result-card.fraud h3 { color: var(--danger); }
+
+.result-card p { font-size: 1.1rem; margin-top: 4px; }
+.result-card .note { font-size: 0.85rem; color: var(--text-muted); margin-top: 8px; }
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  fieldset { grid-template-columns: 1fr; }
+  .model-cards { grid-template-columns: 1fr; }
+}
