@@ -2,7 +2,7 @@
 
 An end-to-end ML system for detecting fraudulent credit card transactions, with an interactive React dashboard.
 
-Built by the Nirav Sayanja.
+Built by Nirav Sayanja.
 
 ## Overview
 
@@ -84,4 +84,4 @@ Kaggle [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/cre
 ---
 
 Built by Nirav Sayanja
-Last updated: July 13, 2026 for the Nirav Sayanja.
+Last updated: July 13, 2026
