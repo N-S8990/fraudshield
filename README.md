@@ -83,4 +83,5 @@ Kaggle [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/cre
 
 ---
 
-Built by Nirav Sayanja for the Nirav Sayanja.
+Built by Nirav Sayanja
+Last updated: July 13, 2026 for the Nirav Sayanja.
