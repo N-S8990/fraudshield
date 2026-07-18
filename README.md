@@ -1,12 +1,16 @@
-# FraudShield
+![FraudShield Banner](https://capsule-render.vercel.app/api?type=waving&color=0:1C1C1C,100:DC2626&height=220&section=header&text=FraudShield&fontSize=50&fontAlignY=32&desc=Credit%20Card%20Fraud%20Detection%20%E2%80%94%20Full%20Stack%20ML%20System&descAlignY=52&fontColor=ffffff)
 
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-2.1-FF6600?logo=xgboost&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
+<div align="center">
 
-> End-to-end credit card fraud detection system with ML models, a FastAPI backend, and a live React dashboard.
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://reactjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-2.1-FF6600?logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+End-to-end credit card fraud detection system with ML models, a FastAPI backend, and a live React dashboard.
+
+</div>
 
 ---
 
@@ -197,4 +201,10 @@ MIT
 
 ---
 
-Built by [Nirav Sayanja](https://github.com/N-S8990)
+<div align="center">
+
+**Built by [Nirav Sayanja](https://github.com/N-S8990)** · NIT Rourkela
+
+</div>
+
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:DC2626,100:1C1C1C&height=120&section=footer)
